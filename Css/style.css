@@ -14,7 +14,8 @@ body {
                         'info aside'
                       'estudios aside'
                        'pelis pelis'
-                  'comentario comentario';
+                  'comentario comentario'
+             'calcularCreditos calcularCreditos';
 }
 
 .foto {
@@ -146,6 +147,26 @@ a {
     color: black;
 }
 
+.calcularCreditos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    grid-area: calcularCreditos;
+   
+}
+
+.calcularCreditos .linkCalcular {
+    background-color: black;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.linkCalcular a {
+    color: white;
+}
+
 @media screen and (max-width: 1000px) {
     .main {
         grid-template-areas: 'foto foto'
@@ -198,5 +219,60 @@ a {
 }
 
 .atras a {
+    color: white;
+}
+
+/*Pagina de calcular los creditos*/
+
+.calculo {
+    width: 60%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    margin: 70px auto;
+    border-radius: 20px;
+    gap: 30px;
+    background: linear-gradient(rgb(162, 163, 162), rgb(109, 109, 139));
+
+}
+
+.titulo {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.atrasCalcular {
+    width: 80px;
+    border-radius: 10px;
+    height: 40px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.cont-calcular {
+    align-items: center;
+}
+
+.cont-calcular form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cont-calcular input {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form #calcularBtn {
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.harol {
     color: white;
 }
