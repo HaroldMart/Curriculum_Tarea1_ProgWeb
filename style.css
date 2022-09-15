@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 500px;
+    grid-template-areas: 'foto foto'
+                        'info aside'
+                      'estudios aside'
+                       'pelis pelis'
+                  'comentario comentario';
+}
+
+.foto {
+    display: flex;
+    border-radius: 20px;
+    grid-area: foto;
+    height: 300px;
+    background: linear-gradient(rgb(221, 221, 221), rgb(201, 201, 201), rgb(147, 147, 147));
+    justify-content: center;
+}
+
+.foto .cont-foto img {
+    height: 100%;
+    border-radius: 700px;
+}
+
+.info {
+    grid-area: info;
+}
+
+.info .perfil {
+    transition: all 600ms;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    background-color: rgba(236, 236, 236, 0.682);
+    box-shadow: 5px 3px 9px;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+} 
+
+.perfil:hover {
+    box-shadow: 6px 5px 9px 1px;
+}
+
+.perfil .nombre {
+    height: 40px;
+}
+
+.estudios {
+    grid-area: estudios;
+    background-color: rgba(236, 236, 236, 0.682);
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 600ms;
+    margin-top: 10px;
+    box-shadow: 5px 3px 9px;
+}
+
+.estudios:hover {
+    box-shadow: 6px 5px 9px 1px;
+}
+
+
+.estudios .fund-comp, .estudios .software {
+    margin-top: 2rem;
+}
+
+.pelis {
+    grid-area: pelis;
+
+}
+
+.cont-pelis {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    line-height: 40px;
+    color: black;
+}
+
+.peli {
+    width: 390px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 600ms;
+}
+
+.peli:hover {
+    box-shadow: 5px 3px 9px;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.aside {
+    grid-area: aside;
+    padding: 0 10px;
+    box-shadow: 5px 3px 9px;
+    border-radius: 10px;
+    transition: all 600ms;
+    color: black;
+}
+
+.aside:hover {
+    box-shadow: 6px 5px 9px 1px;
+}
+
+.aside .idiomas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.idiomas div, .contacto div {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.comentario {
+    grid-area: comentario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px 0;
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        grid-template-areas: 'foto foto'
+                            'info info'
+                        'estudios estudios'
+                            'aside aside'
+                           'pelis pelis'
+                      'comentario comentario';
+    }
+
+    .cont-pelis {
+        flex-wrap: wrap;
+    }
+}
+
+/*Pagina de las series*/
+
+.series {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cont-series {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont-series div div {
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    padding: 20px;
+    background-color: rgba(236, 236, 236, 0.682);
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.atras {
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.682);
+    height: 40px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.atras a {
+    color: white;
+}
